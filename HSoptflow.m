@@ -68,9 +68,18 @@ for i=1:hs-1
      vs(i,j)=sum(sum(v(hk:hl,wk:wl)))/N;
    end;
 end;
+a = importdata('outs1.txt');
+b = importdata('outs2.txt');
 
 figure(1);
 quiver(us,vs);
+colormap('default');
+axis ij;
+axis tight;
+axis equal;
+
+figure(2);
+quiver(a,b);
 colormap('default');
 axis ij;
 axis tight;

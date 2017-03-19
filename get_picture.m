@@ -1,6 +1,6 @@
 for i = 1:3
-    a(:,:,i) = round(255*rand(300, 400));
-    b(:,:,i) = round(255*rand(300, 400));
+    a(:,:,i) = round(255*rand(576, 720));
+    b(:,:,i) = round(255*rand(576, 720));
 end
 a = uint8(a);
 b = uint8(b);
